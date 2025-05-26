@@ -1,0 +1,138 @@
+
+@media screen {
+    .nav {
+        display: flex;
+    }
+    
+}
+ .important {
+  color: black;
+  font-weight: bolder;
+ }
+ .box-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.button {
+  background-color: #f7941d; /* orange vif */
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: #e67e00; /* orange plus foncé */
+  transform: scale(1.05);
+}
+
+.bloc-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/**bloc cards*/
+
+#bloc-double-video {
+  max-width: 1200px;        
+  margin: 0 auto;           
+  padding: 40px 20px;       
+  background-color: #f5f5f5; 
+  border-radius: 15px;
+  display: flex;
+  gap: 20px;                 
+  flex-wrap: wrap;           
+  justify-content: center;
+}
+
+.video-gauche-fond,
+.video2-droite-fond {
+  flex: 1 1 45%;             
+  display: flex;
+  justify-content: center;
+}
+
+iframe {
+  width: 100%;
+  height: 315px;
+  border: none;
+  border-radius: 20px;
+}
+.bloc-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(243, 139, 2, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+
+.bloc-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+.bloc-card img {
+  width: 300px;
+  height: 200px;
+  object-fit: contain;
+  background-color: #f9f9f9;
+  padding: 1rem;
+}
+.bloc-card > div, .bloc-card > a {
+  flex-shrink: 0; 
+}
+.card-text {
+  padding: 1.5rem;
+  flex: 1;
+  text-align: left;
+}
+
+.card-text h2 {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 0.8rem;
+}
+
+.card-text p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  padding: 3rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-text {
+    padding: 1rem;
+  }
+}
+
+

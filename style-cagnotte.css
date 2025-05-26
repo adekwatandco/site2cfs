@@ -1,0 +1,81 @@
+
+#bloc-call-to-action {
+    width: 100%; 
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    display: inline-block; 
+  }
+
+  .bloc-call-to-action img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    opacity: 0.8; 
+    
+  }
+.titre-texte {
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 800px;
+
+}
+
+.titre-texte h2 {
+  font-size: 2rem;
+  color: #101cc5;
+}
+.grid-cards2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card2 {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card2:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card2 img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-text2, .card-tex2 {
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-text2 h2, .card-tex2 h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.card-text2 p, .card-tex2 p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+.burger {
+    display: none;
+}
+

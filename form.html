@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Site de Crowdfunding</title>
+  <link rel="stylesheet" href="style-index.css">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <div class="logo-nav">
+      <a class="link" href="index.html">
+        <img src="assets/logo-bis.svg" alt="Logo du projet">
+      </a>
+    </div>
+    </div>
+
+    <nav class="nav">
+     <ul>
+            <li><a class="link" href="index.html">A PROPOS</a></li>
+            <li><a class="link" href="techno.html">LES TECHNOLOGIES</a></li>
+            <li><a class="link" href="cagnotte.html">LA CAGNOTTE</a></li>
+            <li><a class="link" href="fonctionnement.html">LE DONCTIONNEMENT</a></li>         
+        </ul>
+       <button class="burger"><span class="bar"></span>-</button>
+    </nav>
+
+    <button class="open-modal-btn">
+      <img src="assets/user-solid.svg" alt="Icône utilisateur"> 
+    </button>
+  </header>
+<section id="bloc-form1">
+<form class="form-subscribe" action="traitement.php" method="POST">
+    
+  
+    <div class="input-gauche">
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" name="nom" required>
+  
+      <label for="prenom">Prénom</label>
+      <input type="text" id="prenom" name="prenom" required>
+  
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="email-confirm">Confirmez votre email</label>
+      <input type="email" id="email-confirm" name="email_confirm" required>
+
+    </div>
+  
+    <div class="input-droite">
+      <label for="montant">Montant (€)</label>
+      <input type="number" id="montant" name="montant" min="1" required>
+  
+      <label for="paiement">Mode de paiement</label>
+      <select id="paiement" name="paiement" required>
+        <option value="">-- Choisissez --</option>
+        <option value="carte">Carte bancaire</option>
+        <option value="paypal">PayPal</option>
+        <option value="virement">Virement bancaire</option>
+      </select>
+  
+      <button type="submit">Soutenir le projet 🤝</button>
+    </div>
+
+  </form>
+</section>
+
+
+
+
+<footer>
+    <div class="mentions-legales">
+        <a class="link" href="mentions-leg.html">Mentions Legales</a>
+    </div>
+
+    <div class="liens-utiles">
+        <a class="link" href="liens">Liens Utiles</a>
+    </div>
+    <div class="faq">
+        <a class="link" href="faq">FAQ</a>
+    </div>
+
+    <div class="confidentialite">
+        <a class="link" href="confidentialite.html">Politiques de Confidentialité</a>
+    </div>
+    <div class="cgv">
+        <a class="link" href="cgv.html">CGV</a>
+    </div>
+
+    <div class="rs-facebook-bloc">
+        <img src="assets/square-facebook-brands.svg" alt="facebook">
+        <a href="https://www.facebook.com/" target="_blank"></a>
+    </div>
+
+    <div class="rs-insta-bloc">
+        <img src="assets/square-instagram-brands.svg" alt="instagram">
+        <a href="https://www.instagram.com/" target="_blank"></a>
+    </div>
+
+    <div class="contact-line1">
+        <img src="assets/envelope-solid.svg" alt="email">
+        <a href="mailto:contact@crowdforsign.fr"></a>
+
+    </div>
+</div>
+    <p>@2025 MLB/Tous Droits Réservés</p>
+</footer>
+
+
+    
+</body>
+</html>
