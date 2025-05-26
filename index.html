@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mon Site de Crowdfunding</title>
   <link rel="stylesheet" href="style-index.css">
+  <script src="script.js" defer></script>
  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
@@ -28,35 +29,44 @@
     </nav>
 
     <div class="header_burger" id="burger">
-    <!-- Icône burger : 3 traits -->
-     <div class="header_burger">
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-</svg>
+  </svg>
+     <ul class="nav-link">
+            <li><a href="link" href="techno.html">Technologies</a></li>
+            <li><a href="link" href="fonctionnement.html">Fonctionnement</a></li>
+            <li><a href="cagnotte.html">Cagnotte</a></li>
+            <li><a href="link" href="register.html">Creer un compte</a></li>
+            <li><a href="form.html">Je Partcipe</a></li>
+        </ul>
 </div>
-    <span></span>
-    <span></span>
-    <span></span>
+
+   <button class="open-modal-btn">
+  <img src="assets/user-solid.svg" alt="Icône utilisateur">
+</button>
+
+<!-- Fenêtre modale (invisible au début) -->
+<div class="modal" id="loginModal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Connexion</h2>
+    <form>
+      <label for="username">Nom d'utilisateur</label>
+      <input type="text" id="username" name="username">
+
+      <label for="password">Mot de passe</label>
+      <input type="password" id="password" name="password">
+
+      <button type="submit">Se connecter</button>
+    </form>
   </div>
-
-  <nav id="nav-menu">
-    <ul class="nav-link">
-      <li><a href="#">Accueil</a></li>
-      <li><a href="#">À propos</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
 </div>
-    <button class="open-modal-btn">
-      <img src="assets/user-solid.svg" alt="Icône utilisateur"> 
-    </button>
   </header>
-
   <section class="bloc-principal">
       <img src="assets/woman-touching-smart-technology-holographic-interface.jpg" alt="Femme interagissant avec une interface technologique">
 
       <div class="text-bloc">
-        <h2>LA TRADUCTION DELA LANGUE DES SIGNES EN TEMPS REEL
+        <h2>LA TRADUCTION DE LA LANGUE DES SIGNES EN TEMPS REEL
           <br> Decouvre notre projet fou !
         </h2>
         <p>Participe a ce projet unique innovant</p>
@@ -80,7 +90,7 @@
 
     <div class="bloc-droite">
       <h2>Description du projet</h2>
-      <p>Participez à une initiative innovante visant à rendre <br>la Langue des Signes plus accessible à travers un projet de traduction soutenu par le public.</p>
+      <p>Participe à une initiative innovante visant à rendre <br>la Langue des Signes plus accessible à travers un projet de traduction soutenu par le public.</p>
     </div>
   </section>
 
