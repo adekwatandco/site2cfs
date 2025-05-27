@@ -38,6 +38,7 @@ header {
 }
   nav .link {
     text-decoration: none;
+    color: #0906b3;
   }
   nav a:hover {
     color: #d8ec20;
@@ -84,6 +85,34 @@ header {
 }
 
 
+
+/*progression */
+
+.progression {
+  width: 90%;
+  margin: 40px auto;
+}
+
+.progress_barre .labels {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.barre-outer {
+  width: 100%;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.barre-inner {
+  height: 100%;
+  background-color: #faad1d;
+  width: 0;
+}
 .bloc-principal {
     position: relative;
       width: 100%;
@@ -257,7 +286,7 @@ header {
 
 /* Bloc vidéo */
 .video-card {
-  flex: 1 1 500px; /* largeur flexible avec un min */
+  flex: 1 1 500px; 
   max-width: 600px;
 }
 
