@@ -19,16 +19,17 @@
   });
 
   
-  //fomulaire register//
+  //fomulaire register const//
   document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector(".form-subscribe");
     const email = document.getElementById("email");
     const emailConfirm = document.getElementById("email-confirm");
 
+//
     form.addEventListener("submit", function (e) {
       if (email.value !== emailConfirm.value) {
         e.preventDefault(); 
-        alert("adresse email non conformea");
+        alert("adresse email non conforme");
         emailConfirm.focus();
       }
     });
