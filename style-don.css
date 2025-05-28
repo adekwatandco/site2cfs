@@ -68,3 +68,73 @@
   color: #555;
   line-height: 1.6;
 }
+/* Centrer le carousel dans la page */
+.carousel {
+  margin: 40px auto;
+  max-width: 700px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Taille uniforme des images */
+.carousel-inner img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Boutons de navigation stylés */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* Indicateurs */
+.carousel-indicators button {
+  background-color: #555;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.carousel-indicators .active {
+  background-color: #000;
+}
+.derniere-bloc {
+  max-width: 90%;
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.card-gauche {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card-imgage {
+  flex: 0 0 200px;
+  max-width: 200px;
+}
+
+.card-imgage img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-texte-explication  {
+  flex: 1 1 300px;
+  max-width: 500px;
+  text-align: center;
+
+}

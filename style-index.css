@@ -126,7 +126,23 @@ header {
       display: block;
     
     }
- 
+      .bloc-principal h2 {
+   position: relative;
+  font-size: 2em;
+  background: linear-gradient(90deg, #063ccf, #f3a108, #fff);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
     .text-bloc {
       position: absolute;
       top: 50%;
@@ -270,6 +286,70 @@ header {
   .form-subscribe button:hover {
     background-color: #e26518;
   }
+  body {
+  font-family: 'Montserrat', sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+#form-user-bloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #f1f1f1;
+}
+
+.form-subscribe {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.input-gauche label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #555;
+}
+
+.input-gauche input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  font-size: 16px;
+}
+
+.input-gauche input:focus {
+  border-color: #007BFF;
+}
+
+button.modal-close-btn {
+  margin-top: 25px;
+  width: 100%;
+  padding: 14px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.modal-close-btn:hover {
+  background-color: #0056b3;
+}
 
 .bloc2 {
   display: flex;
@@ -319,10 +399,23 @@ header {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+
 .bloc-droite h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #007BFF;
+  position: relative;
+  font-size: 2em;
+  background: linear-gradient(90deg, #fff, #00f7ff, #fff);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
 }
 
 .bloc-droite p {
@@ -497,74 +590,37 @@ a {
   color: #333;
   text-decoration: none;
 }
+/*responsive */
 
+ @media screen and (max-width: 768px) {
+  .nav ul {
+    display: none;
+  }
 
-
-
-
-
-@media screen and(max-width: 1024px){
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 768px){
- .header_burger {
-    display: flex; 
+  .header_burger {
+    display: block;
     cursor: pointer;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 5px;
-    margin-right: 1rem;
-  }
-  .header_burger svg {
-    stroke: #fd9c5b;
-    width: 25px;
-    height: 20px;
-  }
-  .logo-nav img {
-    width: 80px;
-    height: auto; 
+    margin-top: 10px;
   }
 
-  .open-modal-btn img {
-    width: 20px;
-    height: 20px;
-  }
-  .header nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%; 
-    height: 30%;
-    background-color: #e26518;
-    z-index: 999;
-  }
-  .header .nav-link {
-    display: flex;
+  .bloc-principal {
     flex-direction: column;
-    align-items: flex-start; 
-    padding: 1rem;
+    text-align: center;
+  }
+
+  .bloc2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-bloc, .bloc-droite {
+    text-align: center;
+  }
+
+  .modal-content {
+    width: 90%;
   }
 }
-
 
 
 
