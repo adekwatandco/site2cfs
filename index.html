@@ -4,11 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Le site de crowdfunding vise à récolter des fonds pour une application de traduction de la langue des signes en temps réel grâce à la 4D.">
-<title>Site participatif lsf</title>
+<title>Traduction LSF en temps réel – Crowd For Sign</title>
 <link rel="stylesheet" href="style-index.css">
 <script src="script.js" defer></script>
+<script src="script-cookies.js" defer></script>
+<script src="script-burger.js" defer></script>
  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
 
 <body>
@@ -32,8 +34,8 @@
   <nav class="nav">
     <ul>
       <li><a class="link" href="techno.html">LES TECHNOLOGIES 4D</a></li>
-      <li><a class="link" href="cagnotte.html">LA CAGNOTTE</a></li>
-      <li><a class="link" href="fonctionnement.html">LE FONCTIONNEMENT</a></li>         
+      <li><a class="link" href="cagnotte.html">CAGNOTTE</a></li>
+      <li><a class="link" href="fonctionnement.html">DECOUVRIR L'APPLICATION</a></li>         
     </ul>
   </nav>
 
@@ -56,23 +58,43 @@
        <p><a href="register.html">Créer un compte</a></p>
     </form>
   </div>
-</div>
-  </header>
 
+  <div class="box-btn">
+<button class="button"><a href="form.html">
+    <img src="assets/receive-cash.png" alt="icône contribution">Je Contribue au Projet</a>
+</button></div>
 
- 
   <section class="bloc-principal1">
+
+  <button class="open-modal-btn">
+    <img src="assets/login-figma.png" alt="Icône utilisateur">
+  </button>
+
+  <div class="modal" id="loginModal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Connexion</h2>
+      <form>
+        <label for="username">Nom d'utilisateur</label>
+        <input type="text" id="username" name="username">
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" name="password">
+        <button type="submit">Se connecter</button>
+      </form>
+    </div>
+  </div>
+</header>
+
+  <section class="bloc-principal">
       <img src="assets/fond-figma.jpg" alt="Femme interagissant avec une interface technologique">
 
       <div class="text-bloc1">
-        
         <h1>CROWD FOR SIGN<br> La traduction LSF EN TEMPS REEL
          <br>Decouvre notre projet fou !
         </h1>
         <h2>Participe a ce projet unique innovant</h2>
-        
-     
-       <div class="box-btn">
+        <h2>Deja 10230E sur notre objectif de 30 000E, soyez le prochain contributeur !</h2>    
+     <div class="box-btn">
       <button class="button"><a href="form.html">Je Donne 10E</a></button>
       <button class="button"><a href="form.html">Je Donne 20E</a></button>
       <button class="button"><a href="form.html">Je Donne 50E</a></button>
@@ -80,9 +102,8 @@
       </div>
     </div>
  
-      </div>
-    </div>
-  </section>
+ 
+ </section>
 
 <div class="progress-container">
   <h2>Objectif de collecte : 30 000€</h2>
@@ -91,7 +112,6 @@
     <span><span class="amount">10 800€</span> collectés</span>
     <span><span class="amount">30 000€</span></span>
   </div>
-
   <div class="progress-bar">
     <div class="progress-fill" style="width: 36%;"></div>
   </div>
@@ -178,6 +198,7 @@
       </div>
     </div>
 
+
      <div class="bloc-2">
       <img src="assets/téléchargement.jpeg" alt="pictogramme en diagramme d'un operateur multitache">
       <div class="bloc-2-texte">
@@ -232,46 +253,106 @@ cela peut entraîner un réel danger pour les personnes sourdes, qui ne reçoive
   </div>
   </div>
 </div>
-  <footer>
-    <div class="mentions-legales">
-      <a class="link" href="mention-leg.html">Mentions légales</a>
-    </div>
-    <div class="confidentialite">
-      <a class="link" href="confidentialite.html">Politique de confidentialité</a>
-    </div>
-    <div class="liens-utiles">
-      <a class="link" href="liens.html">Liens utiles</a>
-    </div>
-    <div class="faq">
-      <a class="link" href="faq.html">FAQ</a>
-    </div>
-    <div class="cgv">
-      <a class="link" href="cgv.html">CGV</a>
-    </div>
 
-    <div class="social-media">
-      <div class="rs-facebook-bloc">
-        <a href="https://www.facebook.com/" target="_blank">
-          <img src="assets/square-facebook-brands.svg" alt="Facebook"></a>
-      </div>
 
-      <div class="rs-insta-bloc">
-        <a href="https://www.instagram.com/" target="_blank">
-          <img src="assets/square-instagram-brands.svg" alt="Instagram"></a>
-      </div>
-
-      <div class="contact-line1">
-        <a href="mailto:contact@crowdforsign.fr">
-          <img src="assets/envelope-solid.svg" alt="Email"></a>
+     <div class="bloc-4">
+      <img src="assets/téléchargement.jpeg" alt="">
+      <div class="bloc-4-texte">
+        <h2>ACCES A LA COMMUNICATION </h2>
+        <p>Les gestes de la LSF sont représentatifs de nos émotions, du contexte de conversation, de la disposition des mains dans l'espace, et bien d'autres facteurs qui rendent cette langue particulièrement complexe à traduire.</p>
+        <P>Les dons sont utilisés dans la recherche et le développement de l'application GestureGo.</P>
       </div>
     </div>
 
-    <p>&copy; 2025 MLB / Tous droits réservés</p>
-  </footer>
+ <div class="bloc-5">
+      <img src="assets/hopital.jpeg" alt="photo 2 personnes qui signent">
+      <div class="bloc-5-texte">
+        <h2>SANTE ET SECURITE</h2>
+        <p> les services publics et les plateformes numériques ne sont pas toujours accessibles.<br>
+Le sous-titrage est parfois absent ou incorrect, et la LSF rarement utilisée. En cas de crise (catastrophe naturelle, pandémie),
+cela peut entraîner un réel danger pour les personnes sourdes, qui ne reçoivent pas les informations vitales en temps réel.</P>
+      </div>
+    </div>
+    
+<div class="derniere-bloc">
+  <div class="card-gauche">
+    <div class="card-imgage">
+      <img src="assets/hand.png" alt="couple qui signe">
+    </div>
 
- 
+
+    <div class="card-texte-explication">
+      <h2>La volonte Worldwide</h2>
+      <p>
+      Accessibilité universelle : Disponible 24h/24, partout, sur un simple smartphone, <br>
+      cette solution rendrait la LSF visible et reconnue dans l’espace public.<br>Avancée technologique majeure : La reconnaissance gestuelle en LSF est bien plus complexe que la reconnaissance vocale. <br>
+      Créer une solution efficace représenterait un tournant dans la technologie inclusive.
+    </div>
+     <div class="card-imgage">
+      <img src="assets/mondemains.jpeg" alt="couple qui signe">
+    </div>
+  </div>
+</div>
+  </section>
+
+
 </body>
+<footer>
+  <nav>
+    <ul class="footer-links">
+      <li><a class="link" href="mention-leg.html">Mentions légales</a></li>
+      <li><a class="link" href="confidentialite.html">Politique de confidentialité</a></li>
+      <li><a class="link" href="faq.html">FAQ</a></li>
+      <li><a class="link" href="cgv.html">CGV</a></li>
+    </ul>
+  </nav>
+
+  <div class="social-media">
+    <ul class="social-icons">
+      <li>
+        <a href="https://www.facebook.com/" target="_blank" class="rs-facebook-bloc">
+          <img src="assets/square-facebook-brands.svg" alt="Facebook">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/" target="_blank" class="rs-insta-bloc">
+          <img src="assets/square-instagram-brands.svg" alt="Instagram">
+        </a>
+      </li>
+      <li>
+        <a href="mailto:contact@crowdforsign.fr" class="contact-line1">
+          <img src="assets/envelope-solid.svg" alt="Email">
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <p>&copy; 2025 MLB / Tous droits réservés</p>
+</footer>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

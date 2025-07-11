@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
   
-  //fomulaire register const//
+  //login const//
   document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector(".form-subscribe");
     const email = document.getElementById("email");

@@ -1,20 +1,23 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-@media screen {
-    .nav {
-        display: flex;
-    }
-    
+
+.bloc-principal img {
+  opacity: 0.7;
+
 }
- .important {
+
+.important {
   color: black;
   font-weight: bolder;
- }
- .box-btn {
+}
+
+.box-btn {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
 }
+
 .button {
   background-color: #f7941d; 
   color: white;
@@ -44,23 +47,23 @@
   margin: auto;
 }
 
-/**bloc cards*/
+/* === BLOC DOUBLE VIDÉO === */
 
 #bloc-double-video {
-  max-width: 1200px;        
-  margin: 0 auto;           
-  padding: 40px 20px;       
-  background-color: #f5f5f5; 
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #f5f5f5;
   border-radius: 15px;
   display: flex;
-  gap: 20px;                 
-  flex-wrap: wrap;           
+  gap: 20px;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .video-gauche-fond,
 .video2-droite-fond {
-  flex: 1 1 45%;             
+  flex: 1 1 45%;
   display: flex;
   justify-content: center;
 }
@@ -71,6 +74,9 @@ iframe {
   border: none;
   border-radius: 20px;
 }
+
+/* === CARDS === */
+
 .bloc-card {
   display: flex;
   flex-direction: row;
@@ -87,6 +93,7 @@ iframe {
   transform: scale(1.01);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
 }
+
 .bloc-card img {
   width: 300px;
   height: 200px;
@@ -94,9 +101,12 @@ iframe {
   background-color: #f9f9f9;
   padding: 1rem;
 }
-.bloc-card > div, .bloc-card > a {
-  flex-shrink: 0; 
+
+.bloc-card > div,
+.bloc-card > a {
+  flex-shrink: 0;
 }
+
 .card-text {
   padding: 1.5rem;
   flex: 1;
@@ -118,15 +128,61 @@ iframe {
   text-align: center;
 }
 
+/* === NAVIGATION === */
 
+.nav {
+  display: flex;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Cache le menu en mobile par défaut */
+.nav ul.mobile-hidden {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #d5e3f0;
+}
+
+/* === BURGER MENU === */
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger-menu {
+  display: none;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.material-symbols-outlined {
+  font-size: 2rem;
+  color: #0906b3;
+}
+
+/* === RESPONSIVE (TABLETTES & MOBILES) === */
 
 @media (max-width: 768px) {
-  .card {
+  /* Cards empilées */
+  .bloc-card {
     flex-direction: column;
     text-align: center;
   }
 
-  .card img {
+  .bloc-card img {
     width: 100%;
     height: auto;
   }
@@ -134,6 +190,43 @@ iframe {
   .card-text {
     padding: 1rem;
   }
+
+  /* Burger visible et menu caché par défaut */
+  .burger {
+    display: block;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+
+  .nav ul {
+    display: none;
+  }
+
+  .nav ul.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    background-color: #d5e3f0;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    padding: 2rem 0;
+    z-index: 999;
+  }
+
+  /* Colonnes en bloc */
+  .bloc-principal,
+  .bloc2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-bloc,
+  .bloc-droite {
+    text-align: center;
+  }
 }
-
-
