@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 @media screen {
     .nav {
@@ -15,7 +16,7 @@
   margin-top: 2rem;
 }
 .button {
-  background-color: #f7941d; /* orange vif */
+  background-color: #f7941d; 
   color: white;
   padding: 1rem 2rem;
   font-size: 1.2rem;
@@ -30,7 +31,7 @@
 }
 
 .button:hover {
-  background-color: #e67e00; /* orange plus foncé */
+  background-color: #e67e00; 
   transform: scale(1.05);
 }
 

@@ -7,7 +7,7 @@
     display: inline-block; 
   }
 
-  .bloc-call-to-action img {
+  #bloc-call-to-action img {
     width: 100%;
     height: 300px;
     object-fit: cover;
@@ -74,8 +74,5 @@
   font-size: 0.95rem;
   color: #555;
   line-height: 1.4;
-}
-.burger {
-    display: none;
 }
 

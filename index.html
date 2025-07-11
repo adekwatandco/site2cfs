@@ -12,43 +12,34 @@
 </head>
 
 <body>
-  <header>
-
-    <div class="header-burger">
-    <div class="logo-nav">
-      <a class="link" href="don.html">
-        <img src="assets/logo-bis.svg" alt="Logo du projet">
-      </a>
+ 
+ <div class="cookie-modal" id="cookieModal">
+  <div class="cookie-modal-content">
+    <p>Nous utilisons des cookies pour améliorer votre expérience. <a href="confidentialite.html">En savoir plus</a></p>
+    <div class="cookie-buttons">
+      <button class="cookie-btn accept">Accepter</button>
+      <button class="cookie-btn refuse">Refuser</button>
     </div>
-    </div>
-
-    <nav class="nav">
-     <ul>
-            <li><a class="link" href="index.html">CROWD FOR SIGN</a></li>
-            <li><a class="link" href="don.html">LE PARTICIPATIF</a></li>
-            <li><a class="link" href="techno.html">LES TECHNOLOGIES 4D</a></li>
-            <li><a class="link" href="cagnotte.html">LA CAGNOTTE</a></li>
-            <li><a class="link" href="fonctionnement.html">LE FONCTIONNEMENT</a></li>         
-        </ul>
-    </nav>
-
-<!--menu burger invisible en desk-->
-    <div class="header_burger" id="burger">
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-  </svg>
-     <ul class="nav-link">
-            <li><a href="link" href="techno.html">Technologies</a></li>
-            <li><a href="link" href="fonctionnement.html">Fonctionnement</a></li>
-            <li><a href="cagnotte.html">Cagnotte</a></li>
-            <li><a href="link" href="register.html">Creer un compte</a></li>
-            <li><a href="form.html">Je Partcipe</a></li>
-        </ul>
+  </div>
 </div>
+ <header>
+ 
+  <div class="logo-nav">
+    <a class="link" href="index.html">
+      <img src="assets/main-ok-vectorize-black [Récupéré].svg" alt="Logo du projet">
+    </a>
+  </div> 
+  <nav class="nav">
+    <ul>
+      <li><a class="link" href="techno.html">LES TECHNOLOGIES 4D</a></li>
+      <li><a class="link" href="cagnotte.html">LA CAGNOTTE</a></li>
+      <li><a class="link" href="fonctionnement.html">LE FONCTIONNEMENT</a></li>         
+    </ul>
+  </nav>
 
-   <button class="open-modal-btn">
-  <img src="assets/user-solid.svg" alt="Icône utilisateur">
-</button>
+  <button class="open-modal-btn">
+    <img src="assets/user-solid.svg" alt="Icône utilisateur"> 
+  </button>
 
 <div class="modal" id="loginModal">
   <div class="modal-content">
@@ -62,6 +53,7 @@
       <input type="password" id="password" name="password">
 
       <button type="submit">Se connecter</button>
+       <p><a href="register.html">Créer un compte</a></p>
     </form>
   </div>
 </div>
@@ -69,80 +61,177 @@
 
 
  
-  <section class="bloc-principal">
-      <img src="assets/woman-touching-smart-technology-holographic-interface.jpg" alt="Femme interagissant avec une interface technologique">
+  <section class="bloc-principal1">
+      <img src="assets/fond-figma.jpg" alt="Femme interagissant avec une interface technologique">
 
-      <div class="text-bloc">
+      <div class="text-bloc1">
         
-        <h2>LA TRADUCTION DE LA LANGUE DES SIGNES<br> EN TEMPS REEL
+        <h1>CROWD FOR SIGN<br> La traduction LSF EN TEMPS REEL
          <br>Decouvre notre projet fou !
-        </h2>
-        <p>Participe a ce projet unique innovant</p>
-        <p>Aide-nous à financer ce projet passionnant.</p>      
-     <div class="box-btn">
-      <button class="button"><a href="form.html">Je Participe </a></button>
+        </h1>
+        <h2>Participe a ce projet unique innovant</h2>
+        
+     
+       <div class="box-btn">
+      <button class="button"><a href="form.html">Je Donne 10E</a></button>
+      <button class="button"><a href="form.html">Je Donne 20E</a></button>
+      <button class="button"><a href="form.html">Je Donne 50E</a></button>
+      <button class="button"><a href="form.html">Je Donne 100E</a></button>
+      </div>
+    </div>
+ 
       </div>
     </div>
   </section>
 
- <section class="progression">
-  <div class="progress_barre">
-    <div class="labels">
-      <span class="start">750 euros</span>
-      <span class="end">30 000 euros</span>
-    </div>
-    <div class="barre-outer">
-      <div class="barre-inner" style="width: 20%;"></div>
-    </div>
+<div class="progress-container">
+  <h2>Objectif de collecte : 30 000€</h2>
+
+  <div class="progress-info">
+    <span><span class="amount">10 800€</span> collectés</span>
+    <span><span class="amount">30 000€</span></span>
   </div>
+
+  <div class="progress-bar">
+    <div class="progress-fill" style="width: 36%;"></div>
+  </div>
+</div>
+<section class="bloc-principal">
+  <div class="card-section">
+    <div class="card-texte">
+      <div class="video-bulle" id="videoContainer">
+        <h2>GESTURE GO, une application innovante pour la LSF</h2>
+        <p>
+          Grâce aux technologies 4D, CROWDFORSIGNS développe une application innovante qui permettra de révolutionner l’usage et la compréhension de la langue des signes française.<br>
+          Notre objectif ? Traduire la langue des signes en temps réel grâce à l’intelligence artificielle, pour réduire les barrières de communication entre personnes sourdes et entendantes.
+        </p>
+
+        
+      <div class="video-modal" id="videoModal">
+  <div class="video-modal-content">
+    <span class="close-video-modal">&times;</span>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vMgDkwXFIuw?autoplay=1"
+      title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
+
+    <img src="assets/image-accueil2.png" alt="Illustration d'une femme avatar">
+  </div>
+
+  <div class="box-btn">
+    <a href="form.html" class="button">
+      <img src="assets/receive-cash.png" alt="Icône contribution">
+      Je Contribue au Projet
+    </a>
+  </div>
+
+  <div class="box-btn-savoirplus">
+    <a href="techno.html" class="savoir-plus">En Savoir Plus sur le projet</a>
+  </div>
+  <div id="videoTrigger" style="height: 10px;"></div>
 </section>
-  <section class="bloc2">
-    <div class="video-card">
-      <div class="video-wrapper">
-        <iframe src="https://www.youtube.com/embed/X0Hl_u0iEvs" 
-                title="Vidéo YouTube"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen>
-        </iframe>
-      </div>
-    </div>
 
-    <div class="bloc-droite">
-      <h2>LE CROWDFUNDING</h2>
-      <p>Participe à une initiative innovante visant à rendre <br>la Langue des Signes plus accessible à travers un projet de traduction soutenu par le public.</p>
-    </div>
-  </section>
 
-<!-- section grid -->
-  <section class="grid-cards">
+<ul id="access">
+  <li>
+    <img src="assets/hand-with-smartphone.png" alt="icone main qui tient un telephone">
+    <h2>Accessible 24/24h et 7/7 sur votre smartphone</h2>
+    <p>Les personnes sourdes affrontent des barrières systémiques et sociales constantes, souvent invisibles pour les entendants.<br>
+    Ces difficultés peuvent être atténuées par l’accessibilité universelle, la reconnaissance pleine de la LSF, et des technologies inclusives.</p>
+  </li>
 
-    <div class="card">
-      <img src="assets/doigt-robot.jpg" alt="Doigt robotisé">
-      <div class="card-texte">
-        <h2>LES DONS</h2>
-        <p>Les dons sont utilisés dans la recherche et le développement de l'application GestureGo.</p>
-        <p>GestureGo doit proposer différentes technologies afin de prendre en compte tous les facteurs déterminants de la traduction gestuelle.</p>
-      </div>
-    </div>
+  <li>
+    <img src="assets/ok-hand.png" alt="icone main qui signe ok">
+    <h2>Reconnaissance de la gestuelle et des expressions</h2>
+    <p>Avancée technologique majeure : la reconnaissance gestuelle grâce aux technologies adaptatives.<br>Un tournant dans la technologie inclusive.</p>
+  </li>
 
-    <div class="card">
-      <img src="assets/papa-signe.png" alt="Père signant avec son bébé">
-      <div class="card-texte">
+  <li>
+    <img src="assets/receive-cash.png" alt="icone qui tend la main recoit de l'argent">
+    <h2>Une idée innovante financée par crowdfunding</h2>
+    <p>À Strasbourg, innovation et solidarité se rencontrent.<br>
+    Application française de crowdfunding digital pour projets à impact.<br>Accessible, locale, engagée.</p>
+  </li>
+  <li>
+    <img src="assets/icone-fr.png" alt="drapeau français numérique">
+    <h2>Une entreprise 100% Française</h2>
+    <p>À Strasbourg, innovation et solidarité se rencontrent.<br>
+    Application française de crowdfunding digital pour projets à impact.<br>Accessible, locale, engagée.</p>
+  </li>
+</ul>
+
+    <div class="bloc-2">
+      <img src="assets/femme+hommesigne.jpeg" alt="photo 2 personnes qui signent">
+      <div class="bloc-2-texte">
         <h2>LES COMPLEXITES DE LA LSF</h2>
         <p>Les gestes de la LSF sont représentatifs de nos émotions, du contexte de conversation, de la disposition des mains dans l'espace, et bien d'autres facteurs qui rendent cette langue particulièrement complexe à traduire.</p>
+        <P>Les dons sont utilisés dans la recherche et le développement de l'application GestureGo.</P>
       </div>
     </div>
 
-    <div class="card">
-      <img src="assets/tirelire.jpg" alt="Tirelire et calculatrice">
-      <div class="card-texte">
-        <h2>LA CAGNOTTE</h2>
-        <p>Découvrez le montant acquis et les objectifs de notre cagnotte, et participez au projet.</p>
+    <div class="bloc-3">
+      <img src="assets/education.jpeg" alt="photo enseignante">
+      <div class="bloc-3-texte">
+        <h2>EDUCATION</h2>
+        <p>Une application qui va revolutionner la pedagogie et tous les secteurs de la communication, la sante et les administrations</p>
         <p>Devenez acteur de l'évolution et de l'inclusion.</p>
       </div>
     </div>
-  </section>
 
+     <div class="bloc-2">
+      <img src="assets/téléchargement.jpeg" alt="pictogramme en diagramme d'un operateur multitache">
+      <div class="bloc-2-texte">
+        <h2>ACCES A LA COMMUNICATION </h2>
+        <p>Les gestes de la LSF sont représentatifs de nos émotions, du contexte de conversation, de la disposition des mains dans l'espace, et bien d'autres facteurs qui rendent cette langue particulièrement complexe à traduire.</p>
+        <P>Les dons sont utilisés dans la recherche et le développement de l'application GestureGo.</P>
+      </div>
+    </div>
+
+ <div class="bloc-3">
+      <img src="assets/hopital.jpeg" alt="photo personnel hospitalier qui signe">
+      <div class="bloc-3-texte">
+        <h2>SANTE ET SECURITE</h2>
+        <p> les services publics et les plateformes numériques ne sont pas toujours accessibles.<br>
+Le sous-titrage est parfois absent ou incorrect, et la LSF rarement utilisée. En cas de crise (catastrophe naturelle, pandémie),
+cela peut entraîner un réel danger pour les personnes sourdes, qui ne reçoivent pas les informations vitales en temps réel.</P>
+      </div>
+    </div>
+    
+<div class="derniere-bloc">
+  <div class="bloc-2">
+    <div class="card-imgage">
+      <img src="assets/hand.png" alt="couple qui signe">
+    </div>
+
+
+    <div class="card-texte-explication">
+      <h2>La volonte Worldwide</h2>
+      <p>
+      Accessibilité universelle : Disponible 24h/24, partout, sur un simple smartphone, <br>
+      cette solution rendrait la LSF visible et reconnue dans l’espace public.<br>Avancée technologique majeure : La reconnaissance gestuelle en LSF est bien plus complexe que la reconnaissance vocale. <br>
+      Créer une solution efficace représenterait un tournant dans la technologie inclusive.
+    </div>
+     <div class="card-imgage">
+      <img src="assets/mondemains.jpeg" alt="mapmonde dessinee sur des mains ouvertes">
+    </div>
+  </div>
+</div>
+
+<div class="bloc-2">
+  <div class="lastcall">
+  <h2>N'Hesite plus ! Aide nous a financer GestureGo !</h2>
+  <p>Un don de 100 € ne coûte réellement que 34 € après déduction fiscale ! Donner, c’est montrer un engagement sociétal,<br>
+    profiter de services gratuits (formations, accès VIP…), <br>
+    et participer à un projet inclusif et innovant pour les personnes en situation de handicap.<br>
+  <p>Paiement 100% sécurisé via Paypal et Stripe </p>
+  <div class="box-btn">
+    <a href="form.html" class="button">
+      <img src="assets/receive-cash.png" alt="Icône contribution">
+      Je Contribue au Projet
+    </a>
+  </div>
+  </div>
+</div>
   <footer>
     <div class="mentions-legales">
       <a class="link" href="mention-leg.html">Mentions légales</a>
@@ -180,7 +269,7 @@
     <p>&copy; 2025 MLB / Tous droits réservés</p>
   </footer>
 
-
+ 
 </body>
 </html>
 

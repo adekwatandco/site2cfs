@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 100px 0 0 0; /* laisse la place au header fixé */
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  background: #f9f9f9;
+}
+
+/* HEADER FIXE */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff; /* couleur de fond pour lisibilité */
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ... tout le reste du CSS reste inchangé jusqu’à ... */
+
+.bloc-principal1 h1 {
+  font-size: 45px;
+  color: #EDF1FF; /* corrigé ici */
+  background: linear-gradient(90deg, #063ccf, #f3a108, #fff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ... */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* FOOTER */
+footer {
+  background-color: #5b6bfd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 40px;
+}
+
+footer a.link {
+  color: white;
+}
+
+footer a.link:hover {
+  color: #ffcc00;
+}
+
+
+.social-media {
+  display: flex;
+  gap: 20px;
+}
+
+.rs-facebook-bloc,
+.rs-insta-bloc,
+.contact-line1 {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rs-facebook-bloc img,
+.rs-insta-bloc img,
+.contact-line1 img {
+  width: 30px;
+  height: 30px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .nav ul {
+    display: none;
+  }
+
+  .bloc-principal,
+  .bloc2,
+  .bloc-2,
+  .bloc-3 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-bloc,
+  .bloc-droite {
+    text-align: center;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+}
